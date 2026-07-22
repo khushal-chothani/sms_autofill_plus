@@ -1,9 +1,9 @@
 name: sms_autofill_plus
 description: Modern SMS OTP Autofill for Flutter. Support for SMS Retriever API, User Consent API, and WebOTP. Includes Material 3 UI components and easy integration with Firebase, Supabase, and more.
 version: 1.0.0
-homepage: https://github.com/shirsh94/sms_otp_autofill
-repository: https://github.com/shirsh94/sms_otp_autofill
-issue_tracker: https://github.com/shirsh94/sms_otp_autofill/issues
+homepage: https://github.com/shirsh94/sms_autofill_plus
+repository: https://github.com/shirsh94/sms_autofill_plus
+issue_tracker: https://github.com/shirsh94/sms_autofill_plus/issues
 
 environment:
   sdk: '>=3.4.0 <4.0.0'
