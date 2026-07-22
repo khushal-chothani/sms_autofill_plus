@@ -1,0 +1,44 @@
+name: sms_autofill_plus
+description: Modern SMS OTP Autofill for Flutter. Support for SMS Retriever API, User Consent API, and WebOTP. Includes Material 3 UI components and easy integration with Firebase, Supabase, and more.
+version: 1.0.0
+homepage: https://github.com/shirsh94/sms_otp_autofill
+repository: https://github.com/shirsh94/sms_otp_autofill
+issue_tracker: https://github.com/shirsh94/sms_otp_autofill/issues
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  crypto: ^3.0.3
+  plugin_platform_interface: ^2.1.8
+  web: ^1.0.0
+
+dev_dependencies:
+  pigeon: ^20.0.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.shirsh94.smsotpautofill
+        pluginClass: SmsOtpAutoFillPlugin
+      ios:
+        pluginClass: SmsOtpAutoFillPlugin
+      web:
+        pluginClass: SmsAutoFillPlusWeb
+        fileName: sms_autofill_plus_web.dart
+      macos:
+        pluginClass: SmsOtpAutoFillPlugin
+      windows:
+        pluginClass: SmsOtpAutoFillPlugin
+      linux:
+        pluginClass: SmsOtpAutoFillPlugin
