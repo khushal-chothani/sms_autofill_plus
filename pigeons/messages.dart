@@ -8,13 +8,10 @@ import 'package:pigeon/pigeon.dart';
   cppSourceOut: 'windows/messages.g.cpp',
   kotlinOut: 'android/src/main/kotlin/com/shirsh94/smsotpautofill/Messages.g.kt',
   kotlinOptions: KotlinOptions(),
+  // iOS SPM allows a single language per target. Prefer Swift (Flutter first-party
+  // pattern) — do not also emit objcHeaderOut/objcSourceOut into the same Sources/.
   swiftOut: 'ios/sms_autofill_plus/Sources/sms_autofill_plus/Messages.g.swift',
   swiftOptions: SwiftOptions(),
-  objcHeaderOut: 'ios/sms_autofill_plus/Sources/sms_autofill_plus/include/sms_autofill_plus/Messages.g.h',
-  objcSourceOut: 'ios/sms_autofill_plus/Sources/sms_autofill_plus/Messages.g.m',
-  objcOptions: ObjcOptions(
-    headerIncludePath: './include/sms_autofill_plus/Messages.g.h',
-  ),
 ))
 
 enum AutofillStrategy {

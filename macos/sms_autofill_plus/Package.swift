@@ -19,9 +19,6 @@ let package = Package(
             name: "sms_autofill_plus",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework")
-            ],
-            resources: [
-                // .process("PrivacyInfo.xcprivacy"),
             ]
         )
     ]
