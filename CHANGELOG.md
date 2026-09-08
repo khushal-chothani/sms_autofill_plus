@@ -1,3 +1,7 @@
+## 1.0.1
+
+* Add Swift Package Manager support for iOS and macOS while keeping CocoaPods compatibility.
+
 ## 1.0.0
 
 * **Initial Release - Modern SMS OTP Autofill**:

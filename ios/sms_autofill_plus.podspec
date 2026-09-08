@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'sms_autofill_plus'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Flutter plugin to provide SMS code autofill support'
   s.description      = <<-DESC
 Flutter plugin to provide SMS code autofill support
@@ -16,8 +16,8 @@ Flutter plugin to provide SMS code autofill support
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'shirsh94' => 'shirsh.shukla@gmail.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+  s.source_files = 'sms_autofill_plus/Sources/sms_autofill_plus/**/*.{h,m,swift}'
+  s.public_header_files = 'sms_autofill_plus/Sources/sms_autofill_plus/include/**/*.h'
   s.dependency 'Flutter'
   s.platform = :ios, '11.0'
 
@@ -25,4 +25,3 @@ Flutter plugin to provide SMS code autofill support
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
 end
-

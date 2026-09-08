@@ -8,10 +8,13 @@ import 'package:pigeon/pigeon.dart';
   cppSourceOut: 'windows/messages.g.cpp',
   kotlinOut: 'android/src/main/kotlin/com/shirsh94/smsotpautofill/Messages.g.kt',
   kotlinOptions: KotlinOptions(),
-  swiftOut: 'ios/Classes/Messages.g.swift',
+  swiftOut: 'ios/sms_autofill_plus/Sources/sms_autofill_plus/Messages.g.swift',
   swiftOptions: SwiftOptions(),
-  objcHeaderOut: 'ios/Classes/Messages.g.h',
-  objcSourceOut: 'ios/Classes/Messages.g.m',
+  objcHeaderOut: 'ios/sms_autofill_plus/Sources/sms_autofill_plus/include/sms_autofill_plus/Messages.g.h',
+  objcSourceOut: 'ios/sms_autofill_plus/Sources/sms_autofill_plus/Messages.g.m',
+  objcOptions: ObjcOptions(
+    headerIncludePath: './include/sms_autofill_plus/Messages.g.h',
+  ),
 ))
 
 enum AutofillStrategy {
