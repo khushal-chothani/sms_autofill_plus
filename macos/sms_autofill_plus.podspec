@@ -1,15 +1,15 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint sms_otp_autofill.podspec` to validate before publishing.
+# Run `pod lib lint sms_autofill_plus.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'sms_otp_autofill'
-  s.version          = '2.5.0'
+  s.name             = 'sms_autofill_plus'
+  s.version          = '1.0.0'
   s.summary          = 'Flutter plugin to provide SMS code autofill support'
   s.description      = <<-DESC
 Flutter plugin to provide SMS code autofill support
                        DESC
-  s.homepage         = 'https://github.com/shirsh94/sms_otp_autofill'
+  s.homepage         = 'https://github.com/shirsh94/sms_autofill_plus'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'shirsh94' => 'shirsh.shukla@gmail.com' }
   s.source           = { :path => '.' }
